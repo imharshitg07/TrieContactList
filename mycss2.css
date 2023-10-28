@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+/*  now let us design the body */
+body {
+  color: black;
+  /* text-align: center; */
+  font: 16px Arial;
+}
+
+
+input {
+    padding: 40px;
+    border: 1px solid black;
+    background-color: #eeeeee;
+    /* padding: 40px; */
+    font-size: 20px;
+}
+
+/*the container has to be positioned relative:*/
+.autocomplete {
+    position: relative;
+    display: inline-block;
+    /* color: inherit;
+     */
+
+}
+
+/*  now we will try ton modify the attributes */
+input[type=text] {
+    background-color: #eeeeee;
+    width: 100%;
+}
+
+input[type=submit] {
+    background-color: Blue;
+    color: #fff;
+    cursor: crosshair;
+}
+
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #f1f1f1;
+    border-bottom: 1px solid black;
+    border-top: 2px solid gray;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* when we hover our mouse over the items */
+.autocomplete-items :hover {
+    background-color: #f1f1f1;
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  // we will make this important 
+    background-color: Blue !important;
+    color: black;
+}

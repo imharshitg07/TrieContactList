@@ -1,0 +1,30 @@
+html,body {
+  background-color: : blue;
+    height: 100%;
+}
+
+/* lets modify the container here*/
+
+#container{
+    width: 100%;
+    color: green;
+    height: 60%;
+    background-color: gray;
+    display: flex;
+    margin: 0px auto;
+}
+
+.center_input {
+    width: 50%;
+    display: flex;
+    margin: 20px auto auto;
+}
+
+
+.text_box {
+    padding: 50px;
+    width: 50%;
+    align-content: center;
+    text-align: center;
+    border: 1px solid red;
+}
